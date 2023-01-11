@@ -9,7 +9,7 @@ public class Sphere : Shape
     private void Start()
     {
         ShapeName = transform.name;
-        ShapeLife = 5;
+        speed = 5;
     }
 
     // POLYMORPHISM

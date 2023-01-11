@@ -11,7 +11,7 @@ public class Shape : MonoBehaviour
 
     // Member variables
     private string m_ShapeName;
-    private int m_ShapeLife;
+    private int m_Speed;
 
     // ENCAPSULATION
 
@@ -33,26 +33,26 @@ public class Shape : MonoBehaviour
         }
     }
 
-    public int ShapeLife
+    public int speed
     {
-        get { return m_ShapeLife; }
+        get { return m_Speed; }
         set
         {
             if (value < 0)
             {
-                Debug.LogWarning("The shape life can't be less than 0");
-                m_ShapeLife = 0;
+                Debug.LogWarning("The speed can't be less than 0");
+                m_Speed = 0;
             }
             else
             {
-                m_ShapeLife = value;
+                m_Speed = value;
             }
         }
     }
 
     protected virtual void OnMouseDown()
     {
-        DisplayText("I am a shape");
+        DisplayText("I'm a shape");
     }
 
     // ABSTRACTION

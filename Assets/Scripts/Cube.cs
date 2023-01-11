@@ -9,7 +9,7 @@ public class Cube : Shape
     private void Start()
     {
         ShapeName = transform.name;
-        ShapeLife = 2;
+        speed = 2;
     }
 
     // POLYMORPHISM

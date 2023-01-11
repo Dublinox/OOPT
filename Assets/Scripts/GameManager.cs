@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     [Header("Links")]
     
-    [TextArea(1, 3)] public string projectRepositoryURL = "https://github.com/Dublinox";
+    [TextArea(1, 3)] public string RepositoryURL = "https://github.com/Dublinox";
     private void Awake()
     {
 
